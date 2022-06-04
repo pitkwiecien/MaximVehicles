@@ -1,6 +1,6 @@
-package com.company.classes.innerObjects;
+package com.company.classes.drives;
 
-public class CombustionEngine implements Drive {
+public class CombustionEngine implements Engine {
     private int engineCapacity;
 
     public CombustionEngine() {

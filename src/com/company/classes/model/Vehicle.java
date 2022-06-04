@@ -1,7 +1,7 @@
-package com.company.classes.vehicles;
+package com.company.classes.model;
 
 import com.company.classes.MyObject;
-import com.company.classes.innerObjects.Drive;
+import com.company.classes.drives.Drive;
 import com.company.classes.model.Colour;
 
 public abstract class Vehicle extends MyObject {
@@ -51,12 +51,12 @@ public abstract class Vehicle extends MyObject {
     }
 
     @Override
-    public void buy(int price){
+    public void buy(String price){
         System.out.println("Buying " + this.getClass().getName() + " " + this.vehicleName + ", price = " + price);
     }
 
     @Override
-    public void sell(int price){
+    public void sell(String price){
         System.out.println("Selling " + this.getClass().getName() + " " + this.vehicleName + ", price = " + price);
     }
 

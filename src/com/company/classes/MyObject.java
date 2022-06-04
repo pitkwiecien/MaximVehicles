@@ -15,11 +15,11 @@ public abstract class MyObject {
         System.out.println(this.getClass().getSuperclass().getName());
     }
 
-    public void buy(int price){
+    public void buy(String price){
         System.out.println("Buying " + this.getClass().getName() + ", price = " + price);
     }
 
-    public void sell(int price){
+    public void sell(String price){
         System.out.println("Selling " + this.getClass().getName() + ", price = " + price);
     }
 }
