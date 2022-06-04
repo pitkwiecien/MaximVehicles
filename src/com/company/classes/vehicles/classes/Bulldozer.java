@@ -5,6 +5,7 @@ import com.company.classes.model.Colour;
 import com.company.classes.model.CombustionEngineVehicle;
 import com.company.classes.model.vehicleTypes.Terrestrial;
 
+// implementacja interfejsu
 public class Bulldozer extends CombustionEngineVehicle implements Terrestrial {
     public Bulldozer(Integer price, Colour colour, String vehicleName, Integer maxSpeed, CombustionEngine engine, int tankCapacity) {
         super(price, colour, vehicleName, maxSpeed, engine, tankCapacity);

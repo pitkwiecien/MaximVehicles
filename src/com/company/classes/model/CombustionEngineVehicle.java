@@ -3,6 +3,7 @@ package com.company.classes.model;
 import com.company.classes.drives.CombustionEngine;
 import com.company.classes.model.Colour;
 
+// dziedziczenie klasy
 public abstract class CombustionEngineVehicle extends EngineVehicle{
     private int tankCapacity;
 
@@ -13,5 +14,11 @@ public abstract class CombustionEngineVehicle extends EngineVehicle{
 
     public void launchEngine(){
         System.out.println("Launching engine of vehicle: " + getVehicleName());
+    }
+
+    // dynamiczny polimorfizm (nadpisywanie metody)
+    @Override
+    public CombustionEngine getDrive(){
+        return (CombustionEngine) super.getDrive();
     }
 }

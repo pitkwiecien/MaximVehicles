@@ -7,7 +7,7 @@ public class EngineVehicle extends Vehicle{
         super(price, colour, vehicleName, maxSpeed, drive);
     }
 
-    public void fuel(int fuelAmount){
+    public void refuel(int fuelAmount){
         System.out.println("Refueling " + fuelAmount + " litres");
     }
 }

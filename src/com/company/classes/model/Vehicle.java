@@ -52,12 +52,12 @@ public abstract class Vehicle extends MyObject {
 
     @Override
     public void buy(String price){
-        System.out.println("Buying " + this.getClass().getName() + " " + this.vehicleName + ", price = " + price);
+        System.out.println("Buying " + getClassName() + " " + this.vehicleName + ", price = " + price);
     }
 
     @Override
     public void sell(String price){
-        System.out.println("Selling " + this.getClass().getName() + " " + this.vehicleName + ", price = " + price);
+        System.out.println("Selling " + getClassName() + " " + this.vehicleName + ", price = " + price);
     }
 
     public void printCarName(){
